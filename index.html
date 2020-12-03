@@ -3,7 +3,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio | Responsive Website Design</title>
+    <title>Mehdi Nouri Personal Portfolio | مهدی نوری</title>
     <style type="text/css">
     	/* Check out https://github.com/xhynk/sassy for the flex/grid/helper system I came up with and use */
 .flex,
@@ -1680,7 +1680,7 @@ svg.pluralsight {
   </head>
  <body class="flex-col align-center dark-mode">
 	<nav class="flex justify-center">
-		<a href="#about" class="active">About</a>
+		<a id="first_link" href="#about" class="active">About</a>
 		<!--<a href="#resume">Resume</a>-->
 		<!--<a href="#doggies">Doggies</a>-->
 		<a href="#portfolio">Portfolio</a>
@@ -2070,6 +2070,9 @@ I salute you, be safe!</p><div class="flex-end flex-bottom"><a class="button sma
 	</main>
 	
 	<script type="text/javascript">
+		document.addEventListener('DOMContentLoaded', function() {
+   document.getElementById('first_link').click();
+}, false);		
 		function apiPromise(method, url, data){
 				return new Promise(function(resolve, reject) {
 					var request = new XMLHttpRequest();
